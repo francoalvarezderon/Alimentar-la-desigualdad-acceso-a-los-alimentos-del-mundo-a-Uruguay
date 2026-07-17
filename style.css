@@ -163,10 +163,6 @@ h1 {
     transition: color 0.5s ease; /* Cambia el color al pasar el mouse por encima */
     
 }
-.titulo-hambrecero a {
-  text-decoration:underline;
-  color:#0066cc; 
-}
 
 .descripcion-hambrecero {
     font-family: 'Times New Roman', Times, serif;
@@ -174,6 +170,10 @@ h1 {
     text-align: left;
     margin: 0 auto 30px;
     padding: 0 15px; /* Espacio para que no se pegue al borde */
+}
+.descripcion-hambrecero a {
+  text-decoration:underline;
+  color:#0066cc; 
 }
 .video-hambrecero {
     text-align: center;
@@ -195,7 +195,7 @@ font-family: 'Times New Roman', Times, serif;
     text-decoration: underline;
 }
 
-.mapa-fao h3 {
+.titulo-mapafao h3 {
     text-align:left;
     font-family: "Kameron", serif;
     font-size: 24px;
@@ -233,6 +233,23 @@ font-family: 'Times New Roman', Times, serif;
 .enlace-mapa a {
     color: #0066cc; 
     text-decoration: underline; 
+}
+
+.infografia-titulo h3 {
+   text-align:left;
+    font-family: "Kameron", serif;
+    font-size: 24px;
+    color: #7e7e7e;
+    margin-bottom: 20px;
+    padding: 0 15px; /* Espacio para que no se pegue al borde */
+}
+
+.infografia-descripcion {
+    font-family: 'Times New Roman', Times, serif;
+    color: #353535;
+    text-align: left;
+    margin: 0 auto 30px;
+    padding: 0 15px; /* Espacio para que no se pegue al borde */
 }
 
 
