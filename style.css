@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kameron:wght@400..700&display=swap');
+body { background-color: #f7f7f7;
+       margin: 0;
+}
+
+
+header { 
+background-color: #78cc98;
+padding: 20px;
+
+}
+header:hover {
+    background-color: #276973; 
+    transition: background-color 0.8s ease;
+}
+
+header img {
+position: absolute;
+width: 100px;
+height: 100px;
+left: 40px;
+top: 0px;
+border-radius: 100px;
+}
+
+.nav a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.nav a:hover {
+    color: #78cc98;
+    transition: color 0.5s ease; /* Cambia el color al pasar el mouse por encima */
+}
+
+
+.nav ul {
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none; 
+    margin-top: 30px;
+    margin-right: 200px;
+    
+}
+.nav .menu {
+    position: relative; /* Para que el submenu no se mueva por cualquier lado */
+}
+.nav .submenu {
+    display: none;       
+    position: absolute;   
+    top: 100%;            
+    left: 0;     
+    padding: 15px;
+    margin: 5px 0 0 0;
+    background-color: #78cc98;;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav .submenu li {
+    display: block;
+    white-space: nowrap; /*Reduce espacios en blanco y suprime saltos de linea para que los elementos del submenú estén en una sola línea*/
+}
+.nav .submenu li a:hover {
+    background-color: #276973; /* Esto le cambia el color a la lista de organismos al pasar el mouse por encima */
+    border-radius: 3px;
+    padding: 5px 10px;
+    display: block;
+}
+.nav .submenu.mostrar {
+    display: block;       
+}
+
+
+
+/* El contenedor general que agregaste ahora junta los dos bloques */
+.titulos {
+    display: flex;       
+    width: 100%;         
+}
+
+/* Tu mitad izquierda: la caja que envuelve al h1 */
+.titulo-principal {
+    width: 50%;          /* Toma la mitad de la izquierda */
+    background-color: #276973; /* El color de fondo oscuro de tu diseño */
+    display: flex;
+    align-items: center; /* Centra el título verticalmente en el bloque */
+    padding: 80px 50px; 
+    box-sizing: border-box;
+}
+main {
+    background-color: #b3ab9e18;
+    
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    margin: 0;
+    opacity: 70%; /* Ajusta la opacidad del título */
+}
+
+/* Tu mitad derecha: la caja que envuelve a la foto */
+.img-principal {
+    width: 50%;          /* Toma la mitad exacta derecha */
+    background-color: #276973; 
+}
+
+/* Estilos directos a la etiqueta img para que llene su mitad sin dejar luz */
+.img-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* Evita que la foto se estire o deforme feo */
+    display: block;      
+    opacity: 50%;        
+}
+
+.titulo-contexto h2, 
+.titulo-situacion h2 {
+    text-align: center;
+    padding: 20px;
+    font-family: "Kameron", serif;
+    font-size: 30px;
+    font-weight: 100px;
+    color: #7e7e7e;
+}
+.descripcion-mundial { 
+   font-family: 'Times New Roman', Times, serif;
+   text-align: left;
+   color: #353535;
+   margin: 0 auto 30px;
+   padding: 0 15px; /* Espacio para que no se pegue al borde */
+
+  
+}
+.descripcion-mundial strong {
+    background-color: #f9f2f2; 
+    border-left: 5px solid #d9534f; /* Resaltar un dato clave */
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.informacion-mundial p {
+    margin: 10px 0;
+}
+
+.titulo-hambrecero h3 {
+    
+    text-align:left;
+    font-family: "Kameron", serif;
+    font-size: 24px;
+    color: #7e7e7e;
+    margin-bottom: 20px;
+    padding: 0 15px; /* Espacio para que no se pegue al borde */
+}
+
+.titulo-hambrecero h3:hover {
+    color: #78cc98;
+    transition: color 0.5s ease; /* Cambia el color al pasar el mouse por encima */
+    
+}
+.titulo-hambrecero a {
+  text-decoration:underline;
+  color:#0066cc; 
+}
+
+.descripcion-hambrecero {
+    font-family: 'Times New Roman', Times, serif;
+    color: #353535;
+    text-align: left;
+    margin: 0 auto 30px;
+    padding: 0 15px; /* Espacio para que no se pegue al borde */
+}
+.video-hambrecero {
+    text-align: center;
+    
+
+}
+
+.descripcion-video-hambrecero {
+font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0 auto 30px;
+    padding: 0 15px; /* Espacio para que no se pegue al borde */
+    font-size: 14px;
+    color: #555555;
+    margin-top: 10px; 
+}
+.enlace-etxea a {
+    color: #0066cc; 
+    text-decoration: underline;
+}
+
+.mapa-fao h3 {
+    text-align:left;
+    font-family: "Kameron", serif;
+    font-size: 24px;
+    color: #7e7e7e;
+    margin-bottom: 20px;
+    padding: 0 15px; /* Espacio para que no se pegue al borde */
+}
+
+.descripcion-mapa {
+    font-family: 'Times New Roman', Times, serif;
+    color: #353535;
+    text-align: left;
+    margin: 0 auto 30px;
+    padding: 0 15px; /* Espacio para que no se pegue al borde */
+    
+}
+.img-mapadelhambre {
+    text-align: center;  /* Centra la imagen adentro si es más chica que la pantalla */
+    padding: 0 15px;     /* Tu espacio de seguridad para que no toque los bordes */
+    margin-bottom: 25px; /* Espacio para separarlo de lo que venga abajo */
+
+} 
+.img-mapadelhambre img {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+}
+.enlace-mapa {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px; 
+    color: #555555;
+    margin-top: 10px; 
+    text-align: center;
+}
+.enlace-mapa a {
+    color: #0066cc; 
+    text-decoration: underline; 
+}
+
+
