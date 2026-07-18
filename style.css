@@ -21,6 +21,8 @@ height: 100px;
 left: 40px;
 top: 0px;
 border-radius: 100px;
+box-shadow: 10px 5px 5px black;
+
 }
 
 .nav a {
@@ -42,7 +44,7 @@ border-radius: 100px;
     list-style: none; 
     margin-top: 30px;
     margin-right: 200px;
-    
+
 }
 .nav .menu {
     position: relative; /* Para que el submenu no se mueva por cualquier lado */
@@ -118,7 +120,7 @@ h1 {
     display: block;      
     opacity: 50%;        
 }
-
+.titulo-derechoalimentacion h2,
 .titulo-contexto h2, 
 .titulo-situacion h2 {
     text-align: center;
@@ -128,6 +130,15 @@ h1 {
     font-weight: 100px;
     color: #7e7e7e;
 }
+
+.descripcion-derecho{
+   font-family: 'Times New Roman', Times, serif;
+   text-align: left;
+   color: #353535;
+   margin: 0 auto 30px;
+   padding: 0 15px; /* Espacio para que no se pegue al borde */
+}
+
 .descripcion-mundial { 
    font-family: 'Times New Roman', Times, serif;
    text-align: left;
@@ -158,12 +169,6 @@ h1 {
     padding: 0 15px; /* Espacio para que no se pegue al borde */
 }
 
-.titulo-hambrecero h3:hover {
-    color: #78cc98;
-    transition: color 0.5s ease; /* Cambia el color al pasar el mouse por encima */
-    
-}
-
 .descripcion-hambrecero {
     font-family: 'Times New Roman', Times, serif;
     color: #353535;
@@ -175,10 +180,13 @@ h1 {
   text-decoration:underline;
   color:#0066cc; 
 }
+
 .video-hambrecero {
     text-align: center;
-    
-
+}
+.video-hambrecero iframe {
+    margin-top: 30px;
+    box-shadow: 20px 10px 10px black;
 }
 
 .descripcion-video-hambrecero {
@@ -216,12 +224,13 @@ font-family: 'Times New Roman', Times, serif;
     text-align: center;  /* Centra la imagen adentro si es más chica que la pantalla */
     padding: 0 15px;     /* Tu espacio de seguridad para que no toque los bordes */
     margin-bottom: 25px; /* Espacio para separarlo de lo que venga abajo */
-
+    
 } 
 .img-mapadelhambre img {
     width: 50%;
     height: auto;
     display: inline-block;
+    box-shadow: 20px 10px 10px black;
 }
 .enlace-mapa {
     font-family: 'Times New Roman', Times, serif;
