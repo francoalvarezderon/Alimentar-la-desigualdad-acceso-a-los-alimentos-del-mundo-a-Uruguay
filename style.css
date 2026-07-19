@@ -297,4 +297,85 @@ font-family: 'Times New Roman', Times, serif;
     text-decoration: underline;
 }
 
+          /*-----------AJUSTE DE TAMAÑO PARA PANTALLAS DEL INDEX.html-----------*/ 
+
+         /*------------AJUSTE PARA TABLET Y PANTALLAS GRANDES------------*/
+@media (min-width:768px) and (max-width:1024px) {
+header img {left: auto;}
+
+.nav ul {
+        margin-right: auto; 
+        gap: 25px;
+    }
+}
+         /*------------AJUSTE PARA CELULARES PEQUEÑOS------------*/
+@media (min-width:320px) and (max-width:767px) {
+header {
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+header img { left: 0%;
+    height: auto;   
+    width: 60px;
+    
+}
+
+.nav ul {
+        margin-right: 5px; 
+        padding-left: 0px;
+        gap: 8px;
+        font-size: 10px;
+    }
+.titulos {
+        flex-direction: column; /* el título y la foto pasan a posicion vertical */
+    }
+
+    .titulo-principal {
+        width: 100%;       /* Ocupa todo el ancho de la pantalla */
+        text-align: center; 
+        padding: 20px 100px; 
+    }
+
+    .img-principal {
+        width: 100%;       /* Ocupa todo el ancho de la pantalla */
+    }
+
+    .img-principal img {
+        height: 220px;     /* Altura controlada para que no se extienda hacia abajo */
+    }
+
+.titulo-derechoalimentacion h2,
+.titulo-contexto h2, 
+.titulo-situacion h2 {
+    font-size: 20px;
+}
+.titulo-hambrecero h3, 
+.titulo-mapafao h3 {
+    font-size: 20px;
+}
+p {
+    font-size: 10px;
+    
+}
+.descripcion-mundial strong {
+    background-color: #f9f2f2; 
+    border-left: 5px solid #d9534f; /* Resaltar un dato clave */
+    padding: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.video-hambrecero iframe {
+    width: 280px;
+    height: 160px;
+    margin-top: 5px;
+}
+.img-mapadelhambre img{
+    width: 250px;
+}
+.enlace-mapa {
+    font-size: 10px;
+    margin-top: 20px;
+}
+}
 
