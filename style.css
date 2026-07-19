@@ -252,6 +252,10 @@ font-family: 'Times New Roman', Times, serif;
     display: inline-block;
     box-shadow: 20px 10px 10px black;
 }
+.img-mapadelhambre img:hover {
+     transform: scale(1.15); /* Agranda un 15% su tamaño original al pasar el raton sobre la imagen */      
+    cursor: pointer;
+}
 .enlace-mapa {
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px; 
@@ -287,6 +291,10 @@ font-family: 'Times New Roman', Times, serif;
     text-align: left;
     margin: 0 auto 30px;
     padding: 0 15px; /* Espacio para que no se pegue al borde */
+}
+.descripcion-situacionuru a {
+    color: #0066cc; 
+    text-decoration: underline;
 }
 
 
