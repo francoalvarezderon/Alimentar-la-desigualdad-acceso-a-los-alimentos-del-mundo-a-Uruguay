@@ -162,8 +162,8 @@ h1 {
 .descripcion-mundial, 
 .descripcion-hambrecero, 
 .descripcion-mapa, 
-.descripcion-situacionuru,
-.descripcion-video-hambrecero{
+.descripcion-situacionuru
+{
    font-family: 'Times New Roman', Times, serif;
    text-align: left;
    color: #353535;
@@ -193,9 +193,10 @@ h1 {
     font-family: "Kameron", serif;
     font-size: 24px;
     font-weight: 400;
-    color: #7e7e7e;
+    color: #3a3a3a;
     margin-bottom: 20px;
     padding: 0 15px; /* Espacio para que no se pegue al borde */
+    text-decoration: underline;
 }
 
                                 /*------------DECORACIÓN DE ENLACES------------*/
@@ -209,6 +210,13 @@ h1 {
 }
 
                                 /*------------DESCRIPCION PARA SECCION "HAMBRE CERO"------------*/
+.descripcion-video-hambrecero {
+font-family: 'Times New Roman', Times, serif;
+    font-size: 14px; 
+    color: #555555;
+    margin-top: 10px; 
+    text-align: center;
+}
 .video-hambrecero {
     text-align: center;
 }
@@ -340,10 +348,10 @@ header img { left: 0%;
 }
 .titulo-hambrecero h3, 
 .titulo-mapafao h3 {
-    font-size: 20px;
+    font-size: 18px;
 }
 p {
-    font-size: 15px;
+    font-size: 14px;
     
 }
 .descripcion-mundial strong {
