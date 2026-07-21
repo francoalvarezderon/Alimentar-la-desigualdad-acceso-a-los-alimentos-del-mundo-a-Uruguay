@@ -285,17 +285,40 @@ font-family: 'Times New Roman', Times, serif;
     padding: 0 15px; /* Espacio para que no se pegue al borde */
 }
 
-.descripcion-situacionuru {
+.descripcion-situacionuru p {
     font-family: 'Times New Roman', Times, serif;
     color: #353535;
     text-align: left;
-    margin: 0 auto 30px;
+    margin: 0 auto 12px;
     padding: 0 15px; /* Espacio para que no se pegue al borde */
 }
 .descripcion-situacionuru a {
     color: #0066cc; 
     text-decoration: underline;
 }
+
+
+
+          /*-----------PIE DE PÁGINA---------*/
+footer {
+    background-color: #78cc98;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+address.contacto-footer {
+    font-style: normal; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+address.contacto-footer a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
 
           /*-----------AJUSTE DE TAMAÑO PARA PANTALLAS DEL INDEX.html-----------*/ 
 
