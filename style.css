@@ -2,7 +2,7 @@
 body { background-color: #f7f7f7;
        margin: 0;
 }
-
+                                      /*------------HEADER-------------*/
 
 header { 
 background-color: #78cc98;
@@ -25,6 +25,7 @@ box-shadow: 10px 5px 5px black;
 
 }
 
+                                     /*--------------NAV-------------*/
 .nav a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(255, 255, 255);
@@ -55,8 +56,6 @@ box-shadow: 10px 5px 5px black;
     cursor: pointer;
 }
 
-
-
 .nav ul {
     display: flex;
     justify-content: right;
@@ -77,7 +76,7 @@ box-shadow: 10px 5px 5px black;
     left: 0;     
     padding: 15px;
     margin: 5px 0 0 0;
-    background-color: #78cc98;;
+    background-color: #78cc98;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -98,7 +97,14 @@ box-shadow: 10px 5px 5px black;
 }
 
 
-/* El contenedor general que agregaste ahora junta los dos bloques */
+                                /*------------MAIN------------*/
+
+main {
+    background-color: #0f12be18;
+    
+}
+
+                               /*-------------TITULO PRINCIPAL------------*/
 .titulos {
     display: flex;       
     width: 100%;         
@@ -113,17 +119,13 @@ box-shadow: 10px 5px 5px black;
     padding: 80px 50px; 
     box-sizing: border-box;
 }
-main {
-    background-color: #b3ab9e18;
-    
-}
 
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
     color: #ffffff;
     margin: 0;
-    opacity: 70%; /* Ajusta la opacidad del título */
+    opacity: 0.85; /* Ajusta la opacidad del título */
 }
 
 
@@ -138,8 +140,11 @@ h1 {
     height: 100%;
     object-fit: cover;   /* Evita que la foto se estire o deforme feo */
     display: block;      
-    opacity: 50%;        
+    opacity: 0.50;  /*Ajusta la opacidad de la imagen principal */
 }
+
+                                /*------------TIULOS PARA H2------------*/
+
 .titulo-derechoalimentacion h2,
 .titulo-contexto h2, 
 .titulo-situacion h2 {
@@ -147,9 +152,11 @@ h1 {
     padding: 20px;
     font-family: "Kameron", serif;
     font-size: 30px;
-    font-weight: 100px;
+    font-weight: 900;
     color: #7e7e7e;
 }
+
+                                /*------------DESCRIPCION DE DERECHO A LA ALIMENTACION------------*/
 
 .descripcion-derecho{
    font-family: 'Times New Roman', Times, serif;
@@ -158,6 +165,9 @@ h1 {
    margin: 0 auto 30px;
    padding: 0 15px; /* Espacio para que no se pegue al borde */
 }
+
+                                /*------------DESCRIPCION DE SITUACION A NIVEL MUNDIAL------------*/
+
 
 .descripcion-mundial { 
    font-family: 'Times New Roman', Times, serif;
@@ -179,15 +189,22 @@ h1 {
     margin: 10px 0;
 }
 
-.titulo-hambrecero h3 {
+                                /*------------TITULOS PARA H3------------*/
+
+.titulo-hambrecero h3,
+.titulo-mapafao h3 {
     
     text-align:left;
     font-family: "Kameron", serif;
     font-size: 24px;
+    font-weight: 400;
     color: #7e7e7e;
     margin-bottom: 20px;
     padding: 0 15px; /* Espacio para que no se pegue al borde */
 }
+
+                                /*------------DESCRIPCION PARA SECCION "HAMBRE CERO"------------*/
+
 
 .descripcion-hambrecero {
     font-family: 'Times New Roman', Times, serif;
@@ -223,14 +240,8 @@ font-family: 'Times New Roman', Times, serif;
     text-decoration: underline;
 }
 
-.titulo-mapafao h3 {
-    text-align:left;
-    font-family: "Kameron", serif;
-    font-size: 24px;
-    color: #7e7e7e;
-    margin-bottom: 20px;
-    padding: 0 15px; /* Espacio para que no se pegue al borde */
-}
+                                /*------------DESCRIPCION DE LA SECCION DE "MAPA DEL HAMBRE"------------*/
+
 
 .descripcion-mapa {
     font-family: 'Times New Roman', Times, serif;
@@ -268,22 +279,8 @@ font-family: 'Times New Roman', Times, serif;
     text-decoration: underline; 
 }
 
-.infografia-titulo h3 {
-   text-align:left;
-    font-family: "Kameron", serif;
-    font-size: 24px;
-    color: #7e7e7e;
-    margin-bottom: 20px;
-    padding: 0 15px; /* Espacio para que no se pegue al borde */
-}
+                                /*------------DESCRIPCION DE LA SITUACION EN URUGUAY------------*/
 
-.infografia-descripcion {
-    font-family: 'Times New Roman', Times, serif;
-    color: #353535;
-    text-align: left;
-    margin: 0 auto 30px;
-    padding: 0 15px; /* Espacio para que no se pegue al borde */
-}
 
 .descripcion-situacionuru p {
     font-family: 'Times New Roman', Times, serif;
@@ -301,13 +298,16 @@ font-family: 'Times New Roman', Times, serif;
     text-decoration: underline;
 }
 
-          /*-----------PIE DE PÁGINA---------*/
+                                /*------------PIE DE PÁGINA------------*/
+
+
 footer {
     background-color: #78cc98;
     color: #ffffff;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+   
 }
 
 address.contacto-footer {
@@ -317,9 +317,12 @@ address.contacto-footer {
 }
 
 address.contacto-footer a {
-    color: #0066cc;
+    color: #1b3e35;
     text-decoration: underline;
 }
+
+
+
 
 
           /*-----------AJUSTE DE TAMAÑO PARA PANTALLAS DEL INDEX.html-----------*/ 
@@ -358,10 +361,16 @@ header img { left: 0%;
 
     .titulo-principal {
         width: 100%;       /* Ocupa todo el ancho de la pantalla */
-        text-align: center; 
-        padding: 20px 100px; 
+       box-sizing: border-box;
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 8%; 
     }
-
+.titulo-principal h1 {
+        text-align: center;
+        width: 100%;
+    }
     .img-principal {
         width: 100%;       /* Ocupa todo el ancho de la pantalla */
     }
@@ -380,7 +389,7 @@ header img { left: 0%;
     font-size: 20px;
 }
 p {
-    font-size: 10px;
+    font-size: 15px;
     
 }
 .descripcion-mundial strong {
@@ -399,7 +408,7 @@ p {
     width: 250px;
 }
 .enlace-mapa {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 20px;
 }
 }
