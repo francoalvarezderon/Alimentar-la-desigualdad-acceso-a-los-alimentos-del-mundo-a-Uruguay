@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estadisticas</title>
+    <title>"Alimentar la desigualdad: acceso a los alimentos, del mundo a Uruguay"</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 
-</head> 
-
-<body>
-    <header>
+</head>
+<body> 
+                        <!--BARRA DE MENU y LOGO DE LA PÁGINA-->
+    <header> 
         <div>
         <img src="Imagenes/Alimentar UY.png" alt="Logo de acceso"> 
         </div>
-      <div class="nav">
+      <nav class="nav">
     <ul>
-        <li> <a href="index.html">Inicio</a></li>
-        <li><a href="#politicas">Políticas Públicas</a></li>
+        <li><a href="index.html" id="btn-inicio">Inicio</a></li>
+        <li><a href="politicas.html" id="btn-politicas">Políticas Públicas</a></li>
         <li class="menu">
-            <a href="#organismos" id="btn-organismos">Organismos</a>
+            <a href="#organismos" id="btn-organismos" aria-expanded="false">Organismos 
+            <span style="display: block; font-size: 15px; margin-top: 2px; text-align: center;">⌵</span>
+            </a>
     <ul class="submenu" id="submenu-organismos">
         <li><a href="https://www.fao.org/home/es" target="_blank">FAO</a></li>
         <li><a href="https://www.who.int/es" target="_blank">OMS</a></li>
@@ -31,7 +33,64 @@
             <a href="estadisticas.html" id="btn-estadisticas">Estadísticas</a>
         </li>
         </ul>
-   
+    </nav>
+    </header>
+                        <!--TITULO DE LA PÁGINA-->
+
+    <div class="titulo-politicas">
+        <h1 class="politicas-titulo">Políticas Alimentarias en Uruguay</h1>
+    </div>
+
+
+
+                        <!--CONTENIDO DE LA PÁGINA-->
+
+    <main class="contenido-politicas">
+                       <!--CONCEPTO DE POLITICAS PÚBLICAS-->
+    <section class="seccion-definicion-politicas">
+    <div class="descripcion-politicas">
+        <h2>¿Que son las políticas públicas?</h2>
+    </div>
+    
+    <section class="seccion-definicion-politicas">
+    <div class="definicion-politicas">
+        <p>Las políticas son un conjunto de decisiones, principios y normas que orientan la adopción de medidas
+           encaminadas a alcanzar objetivos y metas concretas</p>
+        <p>Orientan ejerciendo cierto poder para satisfacer las necesidades de un país, una organización, una institución, una comunidad, un grupo de población específico, etc.</p>
+                       
+        
+                       <!--CITA DE UNA FUENTE BIBLIOGRÁFICA-->
+    <blockquote class="cita-pastor">
+        <p>Según Pastor (2014) son el conjunto de decisiones gubernamentales —legitimadas institucionalmente— que implican la selección y el desarrollo
+           (implementación) de una serie de fines, objetivos, instrumentos y medidas de actuación, así como
+            la asignación y la movilización de una serie de recursos humanos, materiales, presupuestarios,
+            etc; cuya finalidad es no sólo solventar o prevenir una situación definida como problemática,
+            sino también orientar o modificar conductas y cambiar o transmitir nuevos valores, por lo que contribuyen, de esta manera, a transformar la sociedad, a garantizar la cohesión social y a dotar
+            de legitimidad al sistema político</p>
+    <cite>— Pastor (2014, pp. 22-23)</cite>       
+    </blockquote>
+    </div>
+    </section 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    
         <footer>
     <address class="contacto-footer">
         <p><strong>Proyecto "Alimentar la Desigualdad"</strong></p>
@@ -46,19 +105,3 @@
 </html>
 
 
-.infografia-titulo h3 {
-   text-align:left;
-    font-family: "Kameron", serif;
-    font-size: 24px;
-    color: #7e7e7e;
-    margin-bottom: 20px;
-    padding: 0 15px; /* Espacio para que no se pegue al borde */
-}
-
-.infografia-descripcion {
-    font-family: 'Times New Roman', Times, serif;
-    color: #353535;
-    text-align: left;
-    margin: 0 auto 30px;
-    padding: 0 15px; /* Espacio para que no se pegue al borde */
-}
