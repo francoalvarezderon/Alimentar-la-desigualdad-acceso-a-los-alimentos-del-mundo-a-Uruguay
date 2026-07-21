@@ -297,7 +297,9 @@ font-family: 'Times New Roman', Times, serif;
     text-decoration: underline;
 }
 
-
+.descripcion-situacionuru p strong {
+    text-decoration: underline;
+}
 
           /*-----------PIE DE PÁGINA---------*/
 footer {
