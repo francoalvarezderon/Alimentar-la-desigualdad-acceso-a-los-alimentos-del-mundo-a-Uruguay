@@ -5,10 +5,13 @@ body { background-color: #f7f7f7;
                                       /*------------HEADER-------------*/
 
 header { 
+position:relative;
 background-color: #78cc98;
 padding: 20px;
-
+box-sizing: border-box;
 }
+
+
 header:hover {
     background-color: #276973; 
     transition: background-color 0.8s ease;
@@ -97,13 +100,6 @@ box-shadow: 10px 5px 5px black;
 }
 
 
-                                /*------------MAIN------------*/
-
-main {
-    background-color: #0f12be18;
-    
-}
-
                                /*-------------TITULO PRINCIPAL------------*/
 .titulos {
     display: flex;       
@@ -143,7 +139,7 @@ h1 {
     opacity: 0.50;  /*Ajusta la opacidad de la imagen principal */
 }
 
-                                /*------------TIULOS PARA H2------------*/
+                                /*------------TITULOS PARA H2------------*/
 
 .titulo-derechoalimentacion h2,
 .titulo-contexto h2, 
@@ -322,15 +318,26 @@ address.contacto-footer a {
 
           /*------------TITULO PRINCIPAL-----------*/
           
-.titulo-politicas h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-    margin: 0;
-    color: #87999e;
+.titulo-politicas {
+    /* Fondo con degradado sobre una imagen */
+    background: linear-gradient(rgba(39, 105, 115, 0.85), rgba(26, 74, 82, 0.85)), 
+                url("Imagenes/Politicas-alimentarias.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
     text-align: center;
-    padding: 30px 15px;
+    border-radius: 8px;
 }
 
+.politicas-titulo {
+    color: #ffffff;
+    font-family: "Kameron", serif;
+    font-size: 36px;
+    margin: 0;
+}
+
+
+          /*------------DEFINICION DE POLITICA PÚBLICA-----------*/
 .contenido-politicas h2{
     text-align: center;
     padding: 20px;
@@ -347,12 +354,13 @@ address.contacto-footer a {
    color: #353535;
    margin: 0 auto 30px;
    padding: 0 15px; /* Espacio para que no se pegue al borde */
+   max-width: 900px;
 }
 .cita-pastor {
     margin: 20px 0;
     padding: 15px 20px;
     background-color: #ffffff;
-    border-left: 4px solid #276973; /* Mantiene la línea verde/azul de tu paleta */
+    border-left: 4px solid #276973; 
     border-radius: 0 6px 6px 0;
 }
 
@@ -366,10 +374,134 @@ address.contacto-footer a {
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
     font-weight: bold;
-    text-align: right; /* Alinea la firma del autor a la derecha */
+    text-align: right; 
     margin-top: 8px;
     color: #276973;
 }
+
+
+          /*------------POLITICA ALIMENTARIA-----------*/
+
+          /*------------TITULO POLITICA ALIMENTARIA-----------*/
+.titulo-politicas-alimentarias h3 {
+     
+    text-align:center;
+    font-family: "Kameron", serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #3a3a3a;
+    margin-bottom: 20px;
+    padding: 0 15px; /* Espacio para que no se pegue al borde */
+}
+           /*------------DEFINICION POLITICA ALIMENTARIA-----------*/
+
+.definicion-politicas-alimentarias  {
+   font-family: 'Times New Roman', Times, serif;
+   text-align: left;
+   color: #353535;
+   padding: 0 15px; /* Espacio para que no se pegue al borde */
+}
+
+            /*------------CITA DE FUENTE POLITICAS ALIMENTARIAS-----------*/
+.cita-hamilton {
+    margin: 20px auto;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border-left: 4px solid #276973; 
+    border-radius: 0 6px 6px 0;
+    max-width: 900px;
+    
+}
+.cita-hamilton p {
+    font-style: italic; /* Aplica cursiva a la cita */
+    line-height: 1.5;
+}
+.cita-hamilton cite {
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right; 
+    margin-top: 8px;
+    color: #276973;
+}
+            /*------------ESTILO PARA TITULO POLITICAS ALIMENTARIAS EN URUGUAY-----------*/                            
+
+.seccion-programas {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.titulo-programas h2 {
+    font-family: "Kameron", serif;
+    font-size: 26px;
+    color: #276973;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+           /*------------TARJETA POLÍTICAS ALIMENTARIAS-----------*/
+.grid-politicas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 25px;
+}
+.tarjeta-politica {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.tarjeta-politica:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.etiqueta-organismo {
+    display: inline-block;
+    background-color: #e8f4f2;
+    color: #276973;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.tarjeta-header h3 {
+    font-family: "Kameron", serif;
+    font-size: 20px;
+    color: #073385;
+    margin: 0 0 10px 0;
+}
+.tarjeta-body p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.mas-detalles {
+    display: inline-block;
+    text-decoration:none;
+    color:#0066cc;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #141414;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mas-detalles:hover {
+    background-color: #276973;
+    color: #ffffff;
+}
+
 
 
 
@@ -393,6 +525,11 @@ header {
 }
 
 header img { left: 0%;
+    position: relative; /* <--- Agregás esto para que no quede flotando */
+    left: auto;        /* <--- Desactivás el left: 0% para que no quede pegada al borde */
+    top: auto;
+    display: block;
+    margin: 0 auto 10px auto; /* <--- La centra respecto al menú y le da espacio abajo */
     height: auto;   
     width: 60px;
     
@@ -449,9 +586,8 @@ p {
     
 }
 .video-hambrecero iframe {
-    width: 280px;
-    height: 160px;
-    margin-top: 5px;
+    width: 100%;
+    height: 200px;
 }
 .img-mapadelhambre img{
     width: 250px;
