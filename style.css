@@ -44,7 +44,8 @@ box-shadow: 10px 5px 5px black;
 #btn-organismos, 
 #btn-politicas,
 #btn-estadisticas,
-#btn-inicio {
+#btn-inicio,
+#btn-mapa {
     display: inline-block;
     transition: transform 0.5s ease; 
 }
@@ -53,7 +54,8 @@ box-shadow: 10px 5px 5px black;
 #btn-organismos:hover,
 #btn-politicas:hover,
 #btn-estadisticas:hover,
-#btn-inicio:hover {
+#btn-inicio:hover,
+#btn-mapa:hover {
     transform: scale(1.1); /* Agranda un 10% de su tamaño original */
     color: #ffffff;       
     cursor: pointer;
@@ -66,7 +68,7 @@ box-shadow: 10px 5px 5px black;
     gap: 50px;
     list-style: none; 
     margin-top: 30px;
-    margin-right: 200px;
+    margin-right: 100px;
 
 }
 .nav .menu {
@@ -503,8 +505,49 @@ address.contacto-footer a {
 }
 
 
+          /*------------SECCION CSS PARA MAPA.html------------/*
 
+/*------------SECCIÓN MAPA EN MAPA------------*/
 
+.seccion-mapa {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.seccion-mapa h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #276973;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#mapa {
+    width: 100%;
+    height: 500px; 
+    border-radius: 8px;
+    border: 2px solid #276973;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.filtrar {
+    max-width: 1000px; 
+    margin: 15px auto 30px auto;
+    padding: 0 15px;
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    color: #276973;
+    font-weight: 900;
+}
+
+.filtrar select {
+    padding: 6px 12px;
+    border: 1px solid #276973;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    background-color:#78cc98;
+}
 
           /*-----------AJUSTE DE TAMAÑO PARA PANTALLAS DEL INDEX.html-----------*/ 
 
@@ -538,7 +581,7 @@ header img { left: 0%;
 .nav ul {
         margin-right: 5px; 
         padding-left: 0px;
-        gap: 8px;
+        gap: 15px;
         font-size: 10px;
     }
 .titulos {

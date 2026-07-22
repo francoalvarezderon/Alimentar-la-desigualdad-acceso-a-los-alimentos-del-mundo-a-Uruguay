@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de ubicación de los servicios de comedores</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <script src="script.js" defer></script>
+
+</head>
+<body> 
+                        <!--BARRA DE MENU y LOGO DE LA PÁGINA-->
+    <header> 
+        <div>
+        <img src="Imagenes/Alimentar UY.png" alt="Logo de acceso"> 
+        </div>
+      <nav class="nav">
+    <ul>
+        <li><a href="index.html" id="btn-inicio">Inicio</a></li>
+        <li><a href="politicas.html" id="btn-politicas">Políticas Públicas</a></li>
+        <li class="menu">
+            <a href="#organismos" id="btn-organismos" aria-expanded="false">Organismos 
+            <span style="display: block; font-size: 15px; margin-top: 2px; text-align: center;">⌵</span>
+            </a>
+            
+    <ul class="submenu" id="submenu-organismos">
+        <li><a href="https://www.fao.org/home/es" target="_blank">FAO</a></li>
+        <li><a href="https://www.who.int/es" target="_blank">OMS</a></li>
+        <li><a href="https://www.gub.uy/ministerio-desarrollo-social/" target="_blank">MIDES</a></li>
+        <li><a href="https://www.gub.uy/ministerio-ganaderia-agricultura-pesca/" target="_blank">MGAP</a></li>
+    </ul> 
+       </li>
+        <li class="menu-estadisticas">
+            <a href="estadisticas.html" id="btn-estadisticas">Estadísticas</a>
+        </li>
+        <li class="menu-mapa">
+            <a href="mapa.html" id="btn-mapa">Mapa de Asistencia</a>
+        </li>
+        </ul>
+    </nav>
+    </header>
+
+
+                           <!-----------CONTENIDO PRINCIPAL(MAPA)----------->
+    <main>
+        <section class="seccion-mapa">
+            <h2>Mapa con ubicación de los distintos comedores en Uruguay</h2>
+
+            <!----------DONDE EL LEAFLET INSERTA EL MAPA---------->
+            <div id="mapa">
+
+            </div>
+
+    </section>
+    </main>
+
+                           <!----------SECCIÓN DE FILTRADO---------->
+<section class="filtrar" >
+<label for="filtroDepartamento">Filtrar por departamento:</label>
+<select id="filtroDepartamento">
+    <option value="todos">Todos los departamentos</option>
+    <option value="Artigas">Artigas</option>
+    <option value="Canelones">Canelones</option>
+    <option value="Cerro Largo">Cerro Largo</option>
+    <option value="Colonia">Colonia</option>
+    <option value="Durazno">Durazno</option>
+    <option value="Flores">Flores</option>
+    <option value="Florida">Florida</option>
+    <option value="Lavalleja">Lavalleja</option>
+    <option value="Maldonado">Maldonado</option>
+    <option value="Montevideo">Montevideo</option>
+    <option value="Paysandú">Paysandú</option>
+    <option value="Río Negro">Río Negro</option>
+    <option value="Rivera">Rivera</option>
+    <option value="Rocha">Rocha</option>
+    <option value="Salto">Salto</option>
+    <option value="San Jose">San José</option>
+    <option value="Soriano">Soriano</option>
+    <option value="Tacuarembó">Tacuarembó</option>
+    <option value="Treinta Y Tres">Treinta y Tres</option>
+</select>
+</section>
+
+
+
+
+    <footer>
+    <address class="contacto-footer">
+        <p><strong>Proyecto "Alimentar la Desigualdad"</strong></p>
+        <p>Sitio desarrollado para el trabajo final del curso.</p>
+        <p>Fuentes oficiales consultadas: <a href="https://www.ine.gub.uy/" target="_blank">INE</a>, <a href="https://www.gub.uy/ministerio-desarrollo-social/" target="_blank">MIDES/INDA</a>, <a href="https://www.fao.org/home/es" target="_blank">FAO</a> y <a href="https://www.gub.uy/ministerio-ganaderia-agricultura-pesca/" target="_blank">MGAP</a></p>
+    </address>
+</footer>
+
+</body>
+
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
