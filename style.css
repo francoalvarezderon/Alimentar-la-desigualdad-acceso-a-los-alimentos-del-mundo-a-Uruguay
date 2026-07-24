@@ -181,6 +181,50 @@ h1 {
 .informacion-mundial p {
     margin: 10px 0;
 }
+                                /*------------TARJETAS DE ESTADISTICAS A NIVEL GLOBAL Y NACIONAL--------------*/
+
+
+
+                                
+
+.estadisticas-mundial, 
+.estadisticas-uruguay {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 25px;
+}
+.tarjeta-estadisticas {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.tarjeta-estadisticas:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.tarjeta-titulo h3 {
+    font-family: "Kameron", serif;
+    font-size: 20px;
+    color: #073385;
+    margin: 0 0 10px 0;
+}
+.tarjeta-descripcion p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
 
                                 /*------------TITULOS PARA H3------------*/
 
@@ -221,6 +265,7 @@ font-family: 'Times New Roman', Times, serif;
 .video-hambrecero iframe {
     margin-top: 30px;
     box-shadow: 20px 10px 10px black;
+    
 }
 
 
@@ -257,41 +302,11 @@ font-family: 'Times New Roman', Times, serif;
 .descripcion-situacionuru p strong {
     text-decoration: underline;
 }
-/*------CITA UDELAR------*/
-.cita-udelar {
-    margin: 20px 0;
-    padding: 15px 20px;
-    background-color: #f9f9f9;
-    border-left: 4px solid #276973; /* Mantiene el color temático de tu sitio */
-    border-radius: 0 6px 6px 0;
-}
-
-.cita-udelar p {
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: 15px;
-    color: #353535;
-    line-height: 1.6;
-    margin: 0 0 8px 0;
-}
-
-.cita-udelar cite {
-    display: block;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: right;
-    margin-top: 5px;
-}
-
-.cita-udelar cite a {
+cite a {
     color: #276973;
     text-decoration: none;
 }
 
-.cita-udelar cite a:hover {
-    text-decoration: underline;
-}
                                 /*------------PIE DE PÁGINA------------*/
 
 
@@ -328,7 +343,6 @@ address.contacto-footer a {
     background-position: center;
     padding: 60px 20px;
     text-align: center;
-    border-radius: 8px;
 }
 
 .politicas-titulo {
@@ -382,7 +396,7 @@ address.contacto-footer a {
 }
 
 
-          /*------------POLITICA ALIMENTARIA-----------*/
+          /*------------POLITICAS ALIMENTARIA-----------*/
 
           /*------------TITULO POLITICA ALIMENTARIA-----------*/
 .titulo-politicas-alimentarias h3 {
@@ -510,16 +524,17 @@ address.contacto-footer a {
 /*------------SECCIÓN MAPA EN MAPA------------*/
 
 .seccion-mapa {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 0 15px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 .seccion-mapa h2 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Kameron", serif;
+    font-size: 26px;
     color: #276973;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #mapa {
@@ -548,6 +563,9 @@ address.contacto-footer a {
     cursor: pointer;
     background-color:#78cc98;
 }
+         
+        
+
 
           /*-----------AJUSTE DE TAMAÑO PARA PANTALLAS DEL INDEX.html-----------*/ 
 
@@ -568,11 +586,11 @@ header {
 }
 
 header img { left: 0%;
-    position: relative; /* <--- Agregás esto para que no quede flotando */
-    left: auto;        /* <--- Desactivás el left: 0% para que no quede pegada al borde */
+    position: relative; 
+    left: auto;        
     top: auto;
     display: block;
-    margin: 0 auto 10px auto; /* <--- La centra respecto al menú y le da espacio abajo */
+    margin: 0 auto 10px auto; 
     height: auto;   
     width: 60px;
     
