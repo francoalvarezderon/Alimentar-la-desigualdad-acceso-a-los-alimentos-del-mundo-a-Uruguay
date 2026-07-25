@@ -100,6 +100,11 @@ box-shadow: 10px 5px 5px black;
 .nav .submenu.mostrar {
     display: block;       
 }
+.boton-desplegar-org {
+    font-size: 15px; 
+    margin-top: 2px; 
+    text-align: right;
+}
 
 
                                /*-------------TITULO PRINCIPAL------------*/
@@ -167,8 +172,17 @@ h1 {
    color: #353535;
    margin: 0 auto 30px;
    padding: 0 15px; /* Espacio para que no se pegue al borde */
+   max-width: 900px;     
+    margin: 0 auto 30px;
 }
-
+.descripcion-derecho p, 
+.descripcion-mundial p, 
+.descripcion-hambrecero p, 
+.descripcion-mapa p, 
+.descripcion-situacionuru p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+ }
                                 /*------------DESCRIPCION DE SITUACION A NIVEL MUNDIAL------------*/
 
 .descripcion-mundial strong {
@@ -184,14 +198,34 @@ h1 {
                                 /*------------TARJETAS DE ESTADISTICAS A NIVEL GLOBAL Y NACIONAL--------------*/
 
 
+.boton-desplegar {
+    background-color: #78cc98;
+    color: #ffffff;
+    font-family: "Kameron", serif;
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    list-style: none; 
+}
 
-                                
+                                 /*------------HACER GIRAR LA FLECHA--------------*/
+.boton-desplegar span {
+    display: inline-block;
+    transition: transform 0.3s ease; 
+}
+
+
+.desplegable-estadisticas[open] .boton-desplegar span {
+    transform: rotate(180deg);
+}
 
 .estadisticas-mundial, 
 .estadisticas-uruguay {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-    gap: 25px;
+    gap: 10px;
+    align-items: start;
 }
 .tarjeta-estadisticas {
     background-color: #ffffff;
@@ -224,14 +258,31 @@ h1 {
     margin-bottom: 20px;
 }
 
-
+.fuente-organismo {
+    display: inline-block;
+    background-color: #e8f4f2;
+    color: #276973;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.enlace-info-tarjetas  { 
+font-family: 'Times New Roman', Times, serif;
+    font-size: 14px; 
+    color: #555555;
+    margin-top: 10px; 
+    text-align: center;
+}
 
                                 /*------------TITULOS PARA H3------------*/
 
 .titulo-hambrecero h3,
-.titulo-mapafao h3 {
+.titulo-mapafao h3,
+.titulo-infografia h3 {
     
-    text-align:left;
+    text-align:center;
     font-family: "Kameron", serif;
     font-size: 24px;
     font-weight: 400;
@@ -246,8 +297,9 @@ h1 {
 .descripcion-hambrecero a,
 .enlace-etxea a,
 .enlace-mapa a,
-.descripcion-situacionuru a {
-  text-decoration:underline;
+.descripcion-situacionuru a,
+.enlace-info-tarjetas a {
+  text-decoration: none;
   color:#0066cc; 
 }
 
@@ -267,27 +319,46 @@ font-family: 'Times New Roman', Times, serif;
     box-shadow: 20px 10px 10px black;
     
 }
+                               
+                                 /*-----------INFOGRAFÍA-----------*/
+.img-infografia {
+    text-align: center;  
+    padding: 0 15px;     
+    margin-bottom: 25px; 
+} 
+
+.img-infografia img {
+    width: 100%;
+    max-width: 450px; 
+    height: auto;
+    display: inline-block;
+    box-shadow: 20px 8px 20px rgba(0, 0, 0, 0.15); 
+}
+
 
 
                                 /*------------DESCRIPCION DE LA SECCION DE "MAPA DEL HAMBRE"------------*/
-
-
 .img-mapadelhambre {
     text-align: center;  
     padding: 0 15px;     
     margin-bottom: 25px; 
     
 } 
-.img-mapadelhambre img {
-    width: 50%;
+.img-mapadelhambre img
+{
+    width: 100%;
+    max-width: 700px;
     height: auto;
     display: inline-block;
     box-shadow: 20px 10px 10px black;
 }
-.img-mapadelhambre img:hover {
+                               
+.img-mapadelhambre img:hover
+ {
      transform: scale(1.15); /* Agranda un 15% su tamaño original al pasar el raton sobre la imagen */      
     cursor: pointer;
 }
+                               
 .enlace-mapa {
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px; 
@@ -370,22 +441,29 @@ address.contacto-footer a {
    color: #353535;
    margin: 0 auto 30px;
    padding: 0 15px; /* Espacio para que no se pegue al borde */
-   max-width: 900px;
+   max-width: 900px;     /* Mismo ancho máximo que las citas */
+    margin: 0 auto 30px;
 }
-.cita-pastor {
-    margin: 20px 0;
+
+                /*------------CITA DE FUENTE POLITICAS PÚBLICAS Y ALIMENTARIAS-----------*/
+.cita-pastor, 
+.cita-hamilton{
+    margin: 20px auto;
     padding: 15px 20px;
     background-color: #ffffff;
     border-left: 4px solid #276973; 
     border-radius: 0 6px 6px 0;
+    max-width: 900px;
 }
 
-.cita-pastor p {
+.cita-pastor p,
+.cita-hamilton p {
     font-style: italic; /* Aplica cursiva a la cita */
     line-height: 1.5;
 }
 
-.cita-pastor cite {
+.cita-pastor cite,
+.cita-hamilton cite {
     display: block;
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
@@ -395,10 +473,11 @@ address.contacto-footer a {
     color: #276973;
 }
 
-
           /*------------POLITICAS ALIMENTARIA-----------*/
 
           /*------------TITULO POLITICA ALIMENTARIA-----------*/
+          
+ 
 .titulo-politicas-alimentarias h3 {
      
     text-align:center;
@@ -416,31 +495,12 @@ address.contacto-footer a {
    text-align: left;
    color: #353535;
    padding: 0 15px; /* Espacio para que no se pegue al borde */
+   max-width: 900px;     /* Mismo ancho máximo que las citas */
+    margin: 0 auto 30px;
 }
 
-            /*------------CITA DE FUENTE POLITICAS ALIMENTARIAS-----------*/
-.cita-hamilton {
-    margin: 20px auto;
-    padding: 15px 20px;
-    background-color: #ffffff;
-    border-left: 4px solid #276973; 
-    border-radius: 0 6px 6px 0;
-    max-width: 900px;
-    
-}
-.cita-hamilton p {
-    font-style: italic; /* Aplica cursiva a la cita */
-    line-height: 1.5;
-}
-.cita-hamilton cite {
-    display: block;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: right; 
-    margin-top: 8px;
-    color: #276973;
-}
+
+ 
             /*------------ESTILO PARA TITULO POLITICAS ALIMENTARIAS EN URUGUAY-----------*/                            
 
 .seccion-programas {
@@ -649,9 +709,6 @@ p {
 .video-hambrecero iframe {
     width: 100%;
     height: 200px;
-}
-.img-mapadelhambre img{
-    width: 250px;
 }
 .enlace-mapa {
     font-size: 12px;
