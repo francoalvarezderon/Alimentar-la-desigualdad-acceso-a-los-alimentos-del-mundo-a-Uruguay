@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kameron:wght@400..700&display=swap');
-body { background-color: #f7f7f7;
-       margin: 0;
+body { 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
 }
                                       /*------------HEADER-------------*/
 
@@ -43,7 +45,6 @@ box-shadow: 10px 5px 5px black;
 
 #btn-organismos, 
 #btn-politicas,
-#btn-estadisticas,
 #btn-inicio,
 #btn-mapa {
     display: inline-block;
@@ -53,7 +54,6 @@ box-shadow: 10px 5px 5px black;
 /* Se agranda al pararse arriba */
 #btn-organismos:hover,
 #btn-politicas:hover,
-#btn-estadisticas:hover,
 #btn-inicio:hover,
 #btn-mapa:hover {
     transform: scale(1.1); /* Agranda un 10% de su tamaño original */
@@ -63,7 +63,7 @@ box-shadow: 10px 5px 5px black;
 
 .nav ul {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     flex-direction: row;
     gap: 50px;
     list-style: none; 
@@ -172,8 +172,7 @@ h1 {
    color: #353535;
    margin: 0 auto 30px;
    padding: 0 15px; /* Espacio para que no se pegue al borde */
-   max-width: 900px;     
-    margin: 0 auto 30px;
+   max-width: 900px;    
 }
 .descripcion-derecho p, 
 .descripcion-mundial p, 
@@ -442,7 +441,6 @@ address.contacto-footer a {
    margin: 0 auto 30px;
    padding: 0 15px; /* Espacio para que no se pegue al borde */
    max-width: 900px;     /* Mismo ancho máximo que las citas */
-    margin: 0 auto 30px;
 }
 
                 /*------------CITA DE FUENTE POLITICAS PÚBLICAS Y ALIMENTARIAS-----------*/
@@ -463,7 +461,7 @@ address.contacto-footer a {
 }
 
 .cita-pastor cite,
-.cita-hamilton cite {
+.autor-cita {
     display: block;
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
@@ -579,7 +577,7 @@ address.contacto-footer a {
 }
 
 
-          /*------------SECCION CSS PARA MAPA.html------------/*
+          /*------------SECCION CSS PARA MAPA.html------------*/
 
 /*------------SECCIÓN MAPA EN MAPA------------*/
 
@@ -589,12 +587,13 @@ address.contacto-footer a {
     padding: 0 20px;
 }
 
-.seccion-mapa h2 {
+.titulo-mapa h2 {
     font-family: "Kameron", serif;
     font-size: 26px;
     color: #276973;
     text-align: center;
     margin-bottom: 30px;
+    padding-top: 20px;
 }
 
 #mapa {
@@ -605,23 +604,24 @@ address.contacto-footer a {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 .filtrar {
-    max-width: 1000px; 
+    max-width:1100px;   
     margin: 15px auto 30px auto;
-    padding: 0 15px;
+    padding: 0 20px;
     text-align: right;
     font-family: 'Times New Roman', Times, serif;
     color: #276973;
     font-weight: 900;
+    justify-content: flex-end;
 }
 
 .filtrar select {
     padding: 6px 12px;
-    border: 1px solid #276973;
+    border: 1px solid #000000;
     border-radius: 4px;
     color: #ffffff;
     font-weight: bold;
     cursor: pointer;
-    background-color:#78cc98;
+    background-color:#276973;
 }
          
         
@@ -645,7 +645,7 @@ header {
     box-sizing: border-box; 
 }
 
-header img { left: 0%;
+header img { 
     position: relative; 
     left: auto;        
     top: auto;
@@ -655,13 +655,23 @@ header img { left: 0%;
     width: 60px;
     
 }
-
-.nav ul {
-        margin-right: 5px; 
-        padding-left: 0px;
-        gap: 15px;
-        font-size: 10px;
+#btn-organismos {
+        white-space: nowrap; 
     }
+.nav ul {
+        margin-top: 5px;
+        margin-right: 0px; 
+        padding-left: 0px;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+.boton-desplegar-org {
+    font-size: 9px; 
+    display: inline-flex;
+    gap: 3px; 
+   
+}
 .titulos {
         flex-direction: column; /* el título y la foto pasan a posicion vertical */
     }

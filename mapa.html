@@ -12,6 +12,7 @@
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
     <script src="script.js" defer></script>
+    <script src="mapa.js" defer></script>
 
 </head>
 <body> 
@@ -30,36 +31,29 @@
             <a href="mapa.html" id="btn-mapa">Mapa de Asistencia</a>
         </li>
      <li class="menu">
-            <a href="#organismos" id="btn-organismos" aria-expanded="false">Organismos 
+            <a id="btn-organismos" aria-expanded="false">Organismos 
              <span class="boton-desplegar-org">▼</span>
             </a>
             
     <ul class="submenu" id="submenu-organismos">
-        <li><a href="https://www.fao.org/home/es" target="_blank">FAO</a></li>
-        <li><a href="https://www.who.int/es" target="_blank">OMS</a></li>
-        <li><a href="https://www.gub.uy/ministerio-desarrollo-social/" target="_blank">MIDES</a></li>
-        <li><a href="https://www.gub.uy/ministerio-ganaderia-agricultura-pesca/" target="_blank">MGAP</a></li>
+      <li><a href="https://www.fao.org/home/es" target="_blank" rel="noopener noreferrer">FAO</a></li>
+      <li><a href="https://www.who.int/es" target="_blank" rel="noopener noreferrer">OMS</a></li>
+      <li><a href="https://www.gub.uy/ministerio-desarrollo-social/" target="_blank" rel="noopener noreferrer">MIDES</a></li>
+      <li><a href="https://www.gub.uy/ministerio-ganaderia-agricultura-pesca/" target="_blank" rel="noopener noreferrer">MGAP</a></li>
     </ul> 
        </li>
         </ul>
     </nav>
     </header>
 
-
-                           <!-----------CONTENIDO PRINCIPAL(MAPA)----------->
+                              <!----------SECCIÓN DE FILTRADO---------->
     <main>
-        <section class="seccion-mapa">
-            <h2>Mapa con ubicación de los distintos comedores en Uruguay</h2>
 
-            <!----------DONDE EL LEAFLET INSERTA EL MAPA---------->
-            <div id="mapa">
+      <div class="titulo-mapa">
+        <h2>Mapa con ubicación de los distintos comedores en Uruguay</h2>
+        </div>
 
-            </div>
 
-    </section>
-    </main>
-
-                           <!----------SECCIÓN DE FILTRADO---------->
 <section class="filtrar" >
 <label for="filtroDepartamento">Filtrar por departamento:</label>
 <select id="filtroDepartamento">
@@ -88,14 +82,24 @@
 
 
 
+                           <!-----------CONTENIDO PRINCIPAL(MAPA)----------->
+        <section class="seccion-mapa">
+
+            <!----------DONDE EL LEAFLET INSERTA EL MAPA---------->
+            <div id="mapa" aria-label="Mapa interactivo de comedores en Uruguay"></div>
+
+    </section>
+    
+
+ 
 
 
+</main>
     <footer>
     <address class="contacto-footer">
         <p><strong>Proyecto "Alimentar la Desigualdad"</strong></p>
         <p>Sitio desarrollado para el trabajo final del curso.</p>
-        <p>Fuentes oficiales consultadas: <a href="https://www.ine.gub.uy/" target="_blank">INE</a>, <a href="https://www.gub.uy/ministerio-desarrollo-social/" target="_blank">MIDES/INDA</a>, <a href="https://www.fao.org/home/es" target="_blank">FAO</a> y <a href="https://www.gub.uy/ministerio-ganaderia-agricultura-pesca/" target="_blank">MGAP</a></p>
-    </address>
+        <p>Fuentes oficiales consultadas: <a href="https://www.ine.gub.uy/" target="_blank" rel="noopener noreferrer">INE</a>, <a href="https://www.gub.uy/ministerio-desarrollo-social/" target="_blank" rel="noopener noreferrer">MIDES/INDA</a>, <a href="https://www.fao.org/home/es" target="_blank" rel="noopener noreferrer">FAO</a> y <a href="https://www.gub.uy/ministerio-ganaderia-agricultura-pesca/" target="_blank" rel="noopener noreferrer">MGAP</a></p>    </address>
 </footer>
 
 </body>

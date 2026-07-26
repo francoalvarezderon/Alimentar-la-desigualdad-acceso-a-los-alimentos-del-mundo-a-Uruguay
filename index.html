@@ -24,15 +24,15 @@
             <a href="mapa.html" id="btn-mapa">Mapa de Asistencia</a>
         </li>
      <li class="menu">
-            <a href="#organismos" id="btn-organismos" aria-expanded="false">Organismos
+            <a id="btn-organismos" aria-expanded="false">Organismos
             <span class="boton-desplegar-org">▼</span>
             </a>
             
     <ul class="submenu" id="submenu-organismos">
-        <li><a href="https://www.fao.org/home/es" target="_blank">FAO</a></li>
-        <li><a href="https://www.who.int/es" target="_blank">OMS</a></li>
-        <li><a href="https://www.gub.uy/ministerio-desarrollo-social/" target="_blank">MIDES</a></li>
-        <li><a href="https://www.gub.uy/ministerio-ganaderia-agricultura-pesca/" target="_blank">MGAP</a></li>
+        <li><a href="https://www.fao.org/home/es" target="_blank" rel="noopener noreferrer">FAO</a></li>
+        <li><a href="https://www.who.int/es" target="_blank" rel="noopener noreferrer">OMS</a></li>
+        <li><a href="https://www.gub.uy/ministerio-desarrollo-social/" target="_blank" rel="noopener noreferrer">MIDES</a></li>
+        <li><a href="https://www.gub.uy/ministerio-ganaderia-agricultura-pesca/" target="_blank" rel="noopener noreferrer">MGAP</a></li>
     </ul> 
        </li>
         </ul>
@@ -72,10 +72,13 @@
     <div class="descripcion-mundial">
         <p>Se estima que 2400 millones de personas se enfrentaron a inseguridad alimentaria de moderada a grave en 2022, lo que significa que carecen de acceso a una alimentación suficiente. Este número aumentó en unos alarmantes 391 millones de personas en comparación con 2019</p>
         <p>El persistente aumento del hambre y la inseguridad alimentaria, impulsado por una compleja interacción de factores, exige atención inmediata y esfuerzos globales coordinados para aliviar este desafío humanitario crítico.</p>
+        <p>La inseguridad alimentaria se asocia con diversos problemas de salud, especialmente en la infancia y la adolescencia.
+           Las personas que viven en hogares con inseguridad alimentaria moderada o grave tienen mayor probabilidad de experimentar malnutrición, tanto por
+           déficit como por exceso, así como enfermedades no transmisibles.</p>
         <p>El hambre y la malnutrición extremas siguen siendo un obstáculo para el desarrollo sostenible y crean una trampa de la que las personas no pueden escapar fácilmente.</p>
         <p>Traduciéndose en individuos menos productivos, más propensos a las enfermedades y, por tanto, a menudo imposibilitados para ganar más y mejorar sus medios de subsistencia.</p>
         <p>Actualmente, 2000 millones de personas en el mundo no tienen acceso habitual a alimentos seguros, nutritivos y suficientes.</p> 
-        <p><strong>Dato clave:</strong> En 2022, 148 millones de niños sufrieron retraso en el crecimiento y 45 millones de niños menores de 5 años sufrieron emaciación.</p>
+        <p><strong>Dato alarmante:</strong> En 2022, 148 millones de niños sufrieron retraso en el crecimiento y 45 millones de niños menores de 5 años sufrieron emaciación.</p>
     </div>
 </section>
 
@@ -265,13 +268,13 @@
   <details class="desplegable-estadisticas">
     
     <summary class="boton-desplegar">
-        Ver estadísticas <span>▼</span>
+        Ver indicadores y estadísticas <span>▼</span>
     </summary>
 
   <!--TARJETA 1-->
   <section class="estadisticas-uruguay">
     <div class="tarjeta-estadisticas">
-            
+            <span class="fuente-organismo">UDELAR</span>
         <div class="tarjeta-titulo">
             <h3>Sistema Agroalimentario</h3>
         </div>
@@ -286,24 +289,57 @@
 
   <!--TARJETA 2-->
   <div class="tarjeta-estadisticas">
-            
+            <span class="fuente-organismo">INE/MSP</span>
         <div class="tarjeta-titulo">
-            <h3></h3>
+            <h3>Inseguridad alimentaria moderada o grave en los hogares</h3>
         </div>
             
         <div class="tarjeta-descripcion">
-            <p></p>
+            <p>Según el Informe Nacional de Prevalencia de Inseguridad Alimentaria en Hogares 2025, sobre la prevalencia de inseguridad alimentaria moderada o grave,
+              de cada 1000 hogares, 132 presentaron una reducción en el consumo de alimentos por falta de dinero u otros recursos, almenos una vez en los últimos 12 meses.
+            </p>
+            <p>La estimación de inseguridad alimentaria grave fue: de cada 1000 hogares, 
+               19 se quedaron sin alimentos por falta de dinero u otros recursos y alguna persona del hogar no ingirió comida en todo el día, al menos una vez en los últimos 12 meses.</p>
         </div>
 
     </div>
 
+   
+  <!--TARJETA 3-->
+  <div class="tarjeta-estadisticas">
+            <span class="fuente-organismo">INE/MSP</span>
+        <div class="tarjeta-titulo">
+            <h3>Inseguridad alimentaria moderada o grave por zonas geográficas</h3>
+        </div>
+            
+        <div class="tarjeta-descripcion">
+            <p>Según el Informe Nacional de Prevalencia de Inseguridad Alimentaria en Hogares 2025,
+               no se detectaron diferencias estadísticamente significativas entre Montevideo e Interior, ni tampoco entre las diferentes regiones del país.</p>
+            
+        </div>
 
+    </div>
 
-
+  <!--TARJETA 4-->
+  <div class="tarjeta-estadisticas">
+            <span class="fuente-organismo">INE/MSP</span>
+        <div class="tarjeta-titulo">
+            <h3>Inseguridad alimentaria moderada o grave por persona en hogares</h3>
+        </div>
+            
+        <div class="tarjeta-descripcion">
+            <p>Según el Informe Nacional de Prevalencia de Inseguridad Alimentaria en Hogares 2025,
+               de cada 1000 personas, 143 vivían en hogares con inseguridad alimentaria moderada o grave</p>
+            <p>En lo que respecta a inseguridad alimentaria grave, de cada 1000 personas, 20 vivían en hogares con 
+            inseguridad alimentaria grave.</p>
+        </div>
+    </div>
 
 
 </section>
   </details>
+
+  <p class="enlace-info-tarjetas">Por más información sobre el Informe Nacional de Prevalencia de Inseguridad Alimentaria en Hogares 2025<a href="https://www5.ine.gub.uy/documents/Demograf%C3%ADayEESS/PDF/ENCUESTAS%20Especiales/Alimentaria/Prevalencia%20de%20inseguridad%20alimentaria%20en%20hogares%20de%20Uruguay%202025.pdf" target="_blank"> click aquí</a></p>
 </main>
 
 <!--PIE DE PÁGINA-->
@@ -311,8 +347,7 @@
     <address class="contacto-footer">
         <p><strong>Proyecto "Alimentar la Desigualdad"</strong></p>
         <p>Sitio desarrollado para el trabajo final del curso.</p>
-        <p>Fuentes oficiales consultadas: <a href="https://www.ine.gub.uy/" target="_blank">INE</a>, <a href="https://www.gub.uy/ministerio-desarrollo-social/" target="_blank">MIDES/INDA</a>, <a href="https://www.fao.org/home/es" target="_blank">FAO</a>, <a href="https://www.gub.uy/ministerio-ganaderia-agricultura-pesca/" target="_blank">MGAP</a> y <a href="https://udelar.edu.uy/" target="_blank">UDELAR</a></p>
-    </address>
+        <p>Fuentes oficiales consultadas: <a href="https://www.ine.gub.uy/" target="_blank" rel="noopener noreferrer">INE</a>, <a href="https://www.gub.uy/ministerio-desarrollo-social/" target="_blank" rel="noopener noreferrer">MIDES/INDA</a>, <a href="https://www.fao.org/home/es" target="_blank" rel="noopener noreferrer">FAO</a> y <a href="https://www.gub.uy/ministerio-ganaderia-agricultura-pesca/" target="_blank" rel="noopener noreferrer">MGAP</a></p>    </address>
 </footer>
 
 </body> 
