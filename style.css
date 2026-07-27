@@ -41,7 +41,7 @@ box-shadow: 10px 5px 5px black;
     transition: color 0.5s ease; /* Cambia el color al pasar el mouse por encima */
 }
 
-/* Efecto estetico para las opciones de la nav */
+                                      /*-----------Efecto para el menu-----------*/
 
 #btn-organismos, 
 #btn-politicas,
@@ -113,27 +113,27 @@ box-shadow: 10px 5px 5px black;
     width: 100%;         
 }
 
-/* Tu mitad izquierda: la caja que envuelve al h1 */
+                                    /*--------------Mitad izquierda, donde va el h1---------------*/
 .titulo-principal {
-    width: 50%;          /* Toma la mitad de la izquierda */
-    background-color: #276973; /* El color de fondo oscuro de tu diseño */
+    width: 50%;          /*se coloca en la mitad de la izquierda*/
+    background-color: #276973; 
     display: flex;
-    align-items: center; /* Centra el título verticalmente en el bloque */
-    padding: 80px 50px; 
+    align-items: center; 
+    padding: 60px 60px; 
     box-sizing: border-box;
 }
 
-h1 {
+.titulo-principal h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 36px;
+    line-height: 1.3;
     color: #ffffff;
     margin: 0;
-    opacity: 0.85; /* Ajusta la opacidad del título */
 }
 
 
 .img-principal {
-    width: 50%;          /* Toma la mitad derecha */
+    width: 50%;          /*Toma la mitad derecha*/
     background-color: #276973; 
 }
 
@@ -141,9 +141,9 @@ h1 {
 .img-principal img {
     width: 100%;
     height: 100%;
-    object-fit: cover;   /* Evita que la foto se estire o deforme feo */
+    object-fit: cover;   /*Evita que la foto se estire o deforme*/
     display: block;      
-    opacity: 0.50;  /*Ajusta la opacidad de la imagen principal */
+    opacity: 0.85;  /*Ajusta la opacidad de la imagen principal */
 }
 
                                 /*------------TITULOS PARA H2------------*/
@@ -201,12 +201,24 @@ h1 {
     background-color: #78cc98;
     color: #ffffff;
     font-family: "Kameron", serif;
+    font-size: 18px;
+    max-width: 900px;
+    margin: 20px auto;
     padding: 15px 25px;
     border-radius: 8px;
     cursor: pointer;
     text-align: center;
-    list-style: none; 
+    list-style: none;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.boton-desplegar:hover {
+    background-color: #276973;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+} 
+
 
                                  /*------------HACER GIRAR LA FLECHA--------------*/
 .boton-desplegar span {
@@ -230,6 +242,7 @@ h1 {
     background-color: #ffffff;
     border-radius: 8px;
     border: 1px solid #e0e0e0;
+    border-top: 4px solid #276973;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
@@ -238,8 +251,8 @@ h1 {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .tarjeta-estadisticas:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -256,7 +269,7 @@ h1 {
     line-height: 1.5;
     margin-bottom: 20px;
 }
-
+                                  /*----------Estilos para las fuentes de las tarjetas-----------*/
 .fuente-organismo {
     display: inline-block;
     background-color: #e8f4f2;
@@ -268,11 +281,19 @@ h1 {
     margin-bottom: 10px;
 }
 .enlace-info-tarjetas  { 
-font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 14px; 
     color: #555555;
     margin-top: 10px; 
     text-align: center;
+}
+.enlace-info-tarjetas a {
+    
+    color: #276973;             
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+
 }
 
                                 /*------------TITULOS PARA H3------------*/
@@ -296,8 +317,8 @@ font-family: 'Times New Roman', Times, serif;
 .descripcion-hambrecero a,
 .enlace-etxea a,
 .enlace-mapa a,
-.descripcion-situacionuru a,
-.enlace-info-tarjetas a {
+.descripcion-situacionuru a
+ {
   text-decoration: none;
   color:#0066cc; 
 }
@@ -314,9 +335,16 @@ font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
 .video-hambrecero iframe {
-    margin-top: 30px;
-    box-shadow: 20px 10px 10px black;
-    
+    margin-top: 15px;
+    border-radius: 12px; 
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-hambrecero iframe:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35); 
 }
                                
                                  /*-----------INFOGRAFÍA-----------*/
@@ -354,7 +382,7 @@ font-family: 'Times New Roman', Times, serif;
                                
 .img-mapadelhambre img:hover
  {
-     transform: scale(1.15); /* Agranda un 15% su tamaño original al pasar el raton sobre la imagen */      
+    transform: scale(1.15); /* Agranda un 15% su tamaño original al pasar el raton sobre la imagen */      
     cursor: pointer;
 }
                                
@@ -381,23 +409,20 @@ cite a {
 
 
 footer {
-    background-color: #78cc98;
+    background-color: #276973; 
     color: #ffffff;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-   
-}
-
-address.contacto-footer {
-    font-style: normal; 
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
+    padding: 30px 20px;
+    margin-top: 60px;
 }
 
 address.contacto-footer a {
-    color: #1b3e35;
+    color: #78cc98;
     text-decoration: underline;
+}
+
+address.contacto-footer a:hover {
+    color: #ffffff;
 }
 
 
@@ -440,7 +465,7 @@ address.contacto-footer a {
    color: #353535;
    margin: 0 auto 30px;
    padding: 0 15px; /* Espacio para que no se pegue al borde */
-   max-width: 900px;     /* Mismo ancho máximo que las citas */
+   max-width: 900px;     
 }
 
                 /*------------CITA DE FUENTE POLITICAS PÚBLICAS Y ALIMENTARIAS-----------*/
@@ -456,7 +481,7 @@ address.contacto-footer a {
 
 .cita-pastor p,
 .cita-hamilton p {
-    font-style: italic; /* Aplica cursiva a la cita */
+    font-style: italic; 
     line-height: 1.5;
 }
 
@@ -493,8 +518,8 @@ address.contacto-footer a {
    text-align: left;
    color: #353535;
    padding: 0 15px; /* Espacio para que no se pegue al borde */
-   max-width: 900px;     /* Mismo ancho máximo que las citas */
-    margin: 0 auto 30px;
+   max-width: 900px;     
+   margin: 0 auto 30px;
 }
 
 
@@ -525,6 +550,7 @@ address.contacto-footer a {
     background-color: #ffffff;
     border-radius: 8px;
     border: 1px solid #e0e0e0;
+    border-top: 4px solid #276973;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
@@ -533,8 +559,8 @@ address.contacto-footer a {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .tarjeta-politica:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 .etiqueta-organismo {
     display: inline-block;
@@ -664,6 +690,7 @@ header img {
         padding-left: 0px;
         gap: 10px;
         font-size: 14px;
+        
     }
 
 .boton-desplegar-org {
@@ -676,13 +703,13 @@ header img {
         flex-direction: column; /* el título y la foto pasan a posicion vertical */
     }
 
-    .titulo-principal {
-        width: 100%;       /* Ocupa todo el ancho de la pantalla */
+.titulo-principal    {
+       width: 100%;       /* Ocupa todo el ancho de la pantalla */
        box-sizing: border-box;
        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 8%; 
+       justify-content: center;
+       align-items: center;
+       padding: 30px 8%; 
     }
 .titulo-principal h1 {
         text-align: center;
