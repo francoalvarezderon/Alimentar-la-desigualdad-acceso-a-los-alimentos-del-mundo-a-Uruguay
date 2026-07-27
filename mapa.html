@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-     crossorigin=""/>
+     crossorigin="">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
@@ -50,11 +50,11 @@
     <main>
 
       <div class="titulo-mapa">
-        <h2>Mapa con ubicación de los distintos comedores en Uruguay</h2>
+        <h1>Mapa con ubicación de los distintos comedores en Uruguay</h1>
         </div>
 
 
-<section class="filtrar" >
+<div class="filtrar" >
 <label for="filtroDepartamento">Filtrar por departamento:</label>
 <select id="filtroDepartamento">
     <option value="todos">Todos los departamentos</option>
@@ -78,17 +78,17 @@
     <option value="Tacuarembó">Tacuarembó</option>
     <option value="Treinta Y Tres">Treinta y Tres</option>
 </select>
-</section>
+</div>
 
 
 
                            <!--CONTENIDO PRINCIPAL(MAPA)-->
-        <section class="seccion-mapa">
+        <div class="seccion-mapa">
 
             <!--DONDE EL LEAFLET INSERTA EL MAPA-->
-            <div id="mapa" aria-label="Mapa interactivo de comedores en Uruguay"></div>
+            <div id="mapa"></div>
 
-    </section>
+        </div>
     
 
  
